@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="1600"
+   height="900"
+   viewBox="0 0 1600 900"
+   version="1.1">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10161d"/>
+      <stop offset="100%" stop-color="#0a0f14"/>
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6f7b84"/>
+      <stop offset="20%" stop-color="#dbe2e7"/>
+      <stop offset="50%" stop-color="#7c8a94"/>
+      <stop offset="80%" stop-color="#eef2f5"/>
+      <stop offset="100%" stop-color="#59656f"/>
+    </linearGradient>
+    <linearGradient id="liquidGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#57d5ff"/>
+      <stop offset="100%" stop-color="#008ecc"/>
+    </linearGradient>
+    <linearGradient id="sprinklerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#89d7ff"/>
+      <stop offset="100%" stop-color="#2a95c9"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="tankClip">
+      <rect id="tank_clip_rect" x="538" y="176" width="254" height="528" rx="110" ry="110"/>
+    </clipPath>
+    <clipPath id="liquidClip">
+      <rect id="liquid_clip_rect" x="538" y="546" width="254" height="158" rx="0" ry="0"/>
+    </clipPath>
+    <pattern id="sprayPattern" width="28" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="10" r="2" fill="#9adfff"/>
+      <circle cx="14" cy="6" r="2" fill="#9adfff"/>
+      <circle cx="22" cy="12" r="2" fill="#9adfff"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1600" height="900" fill="url(#bgGrad)" />
+
+  <!-- Header -->
+  <text id="page_title" x="70" y="82" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#f2f6f8">TANK OVERVIEW</text>
+  <text id="tank_name" x="72" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#8bd9ff">TK-101</text>
+  <text id="last_update_label" x="1230" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="500" fill="#a9bac6">Last Update</text>
+  <text id="last_update_value" x="1230" y="112" font-family="Consolas, monospace" font-size="20" font-weight="700" fill="#ffffff">2026-04-08 14:30:00</text>
+
+  <!-- Main frame -->
+  <rect x="42" y="42" width="1516" height="816" rx="24" fill="none" stroke="#243443" stroke-width="2"/>
+
+  <!-- Left KPI cards -->
+  <g id="card_level">
+    <rect x="70" y="180" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
+    <text x="98" y="223" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Level</text>
+    <text id="level_value" x="98" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">63.5 %</text>
+  </g>
+
+  <g id="card_mass">
+    <rect x="70" y="324" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
+    <text x="98" y="367" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Mass</text>
+    <text id="mass_value" x="98" y="419" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">5 980 kg</text>
+  </g>
+
+  <g id="card_volume">
+    <rect x="70" y="468" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
+    <text x="98" y="511" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Volume</text>
+    <text id="volume_value" x="98" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">6 350 L</text>
+  </g>
+
+  <g id="card_status">
+    <rect x="70" y="612" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
+    <text x="98" y="655" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Status</text>
+    <text id="status_value" x="98" y="707" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#55d66b">NORMAL</text>
+  </g>
+
+  <!-- Right KPI cards -->
+  <g id="card_freekg">
+    <rect x="1190" y="180" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
+    <text x="1218" y="223" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Free Space</text>
+    <text id="freespace_kg_value" x="1218" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">3 650 kg</text>
+  </g>
+
+  <g id="card_freel">
+    <rect x="1190" y="324" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
+    <text x="1218" y="367" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Free Space</text>
+    <text id="freespace_l_value" x="1218" y="419" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">3 650 L</text>
+  </g>
+
+  <g id="card_temp">
+    <rect x="1190" y="468" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
+    <text x="1218" y="511" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Temperature</text>
+    <text id="temperature_value" x="1218" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">31.8 °C</text>
+  </g>
+
+  <g id="card_press">
+    <rect x="1190" y="612" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
+    <text x="1218" y="655" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Pressure</text>
+    <text id="pressure_value" x="1218" y="707" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">48 mbar</text>
+  </g>
+
+  <!-- Tank assembly -->
+  <g id="tank_group" filter="url(#softShadow)">
+    <!-- alarm halo -->
+    <rect id="alarm_ring" x="504" y="136" width="322" height="610" rx="130" fill="none" stroke="#1d2b35" stroke-width="10"/>
+
+    <!-- top cooling ring with sprinklers -->
+    <ellipse id="sprinkler_top_outer" cx="665" cy="162" rx="146" ry="28" fill="#3c4952" stroke="#aebdc6" stroke-width="3"/>
+    <ellipse id="sprinkler_top_inner" cx="665" cy="162" rx="116" ry="16" fill="#182129" stroke="#90a0aa" stroke-width="2"/>
+    <ellipse id="sprinkler_water_ring" cx="665" cy="162" rx="138" ry="22" fill="url(#sprayPattern)" opacity="0.0"/>
+    <g id="sprinkler_heads">
+      <circle cx="530" cy="162" r="5" fill="url(#sprinklerGrad)"/>
+      <circle cx="565" cy="146" r="5" fill="url(#sprinklerGrad)"/>
+      <circle cx="615" cy="136" r="5" fill="url(#sprinklerGrad)"/>
+      <circle cx="665" cy="132" r="5" fill="url(#sprinklerGrad)"/>
+      <circle cx="715" cy="136" r="5" fill="url(#sprinklerGrad)"/>
+      <circle cx="765" cy="146" r="5" fill="url(#sprinklerGrad)"/>
+      <circle cx="800" cy="162" r="5" fill="url(#sprinklerGrad)"/>
+    </g>
+
+    <!-- tank body -->
+    <rect id="tank_shell" x="520" y="150" width="290" height="580" rx="128" fill="url(#steelGrad)" stroke="#f2f6f8" stroke-width="3"/>
+    <rect id="tank_inner" x="538" y="176" width="254" height="528" rx="110" fill="#101922" stroke="#83929d" stroke-width="2"/>
+
+    <!-- level markings -->
+    <g id="scale_marks" stroke="#c8d2d8" stroke-width="2" opacity="0.85">
+      <line x1="810" y1="644" x2="844" y2="644"/>
+      <line x1="810" y1="578" x2="844" y2="578"/>
+      <line x1="810" y1="512" x2="844" y2="512"/>
+      <line x1="810" y1="446" x2="844" y2="446"/>
+      <line x1="810" y1="380" x2="844" y2="380"/>
+      <line x1="810" y1="314" x2="844" y2="314"/>
+      <line x1="810" y1="248" x2="844" y2="248"/>
+    </g>
+    <g id="scale_labels" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#c8d2d8">
+      <text x="852" y="649">0%</text>
+      <text x="852" y="583">20%</text>
+      <text x="852" y="517">40%</text>
+      <text x="852" y="451">60%</text>
+      <text x="852" y="385">80%</text>
+      <text x="852" y="319">90%</text>
+      <text x="852" y="253">100%</text>
+    </g>
+
+    <!-- liquid -->
+    <g id="liquid_group" clip-path="url(#tankClip)">
+      <rect id="liquid_fill" x="538" y="546" width="254" height="158" fill="url(#liquidGrad)"/>
+      <ellipse id="liquid_surface" cx="665" cy="546" rx="127" ry="18" fill="#79e0ff" opacity="0.88"/>
+      <rect id="liquid_shine" x="574" y="188" width="32" height="506" rx="16" fill="#ffffff" opacity="0.10"/>
+    </g>
+
+    <!-- vessel reflection -->
+    <path id="tank_reflection" d="M 588 180 C 570 240, 570 330, 572 420 C 574 535, 580 620, 596 692" fill="none" stroke="#ffffff" stroke-width="10" opacity="0.12"/>
+
+    <!-- temperature probe -->
+    <rect id="temp_probe" x="744" y="246" width="16" height="210" rx="8" fill="#83929d"/>
+    <circle id="temp_probe_tip" cx="752" cy="466" r="10" fill="#a6b3bc"/>
+
+    <!-- inlet line and valve -->
+    <g id="inlet_group">
+      <path id="inlet_pipe" d="M 412 300 H 520" stroke="#9aa8b2" stroke-width="22" stroke-linecap="round" fill="none"/>
+      <circle id="inlet_valve_body" cx="466" cy="300" r="26" fill="#d7dde2" stroke="#60707c" stroke-width="4"/>
+      <path id="inlet_valve_gate" d="M 450 284 L 482 316 M 482 284 L 450 316" stroke="#2a3640" stroke-width="5"/>
+      <polygon id="inlet_flow_arrow" points="432,286 456,300 432,314" fill="#4cd9ff" opacity="0.35"/>
+      <text x="402" y="266" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#9fb2be">INLET</text>
+    </g>
+
+    <!-- outlet line and valve -->
+    <g id="outlet_group">
+      <path id="outlet_pipe" d="M 810 580 H 944" stroke="#9aa8b2" stroke-width="22" stroke-linecap="round" fill="none"/>
+      <circle id="outlet_valve_body" cx="876" cy="580" r="26" fill="#d7dde2" stroke="#60707c" stroke-width="4"/>
+      <path id="outlet_valve_gate" d="M 860 564 L 892 596 M 892 564 L 860 596" stroke="#2a3640" stroke-width="5"/>
+      <polygon id="outlet_flow_arrow" points="922,566 946,580 922,594" fill="#4cd9ff" opacity="0.35"/>
+      <text x="914" y="546" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#9fb2be">OUTLET</text>
+    </g>
+
+    <!-- pressure indicator -->
+    <g id="pressure_indicator_group">
+      <circle id="pressure_indicator_outer" cx="665" cy="760" r="34" fill="#131c24" stroke="#3a4a56" stroke-width="4"/>
+      <circle id="pressure_indicator_inner" cx="665" cy="760" r="22" fill="#1f2b35"/>
+      <path id="pressure_needle" d="M 665 760 L 682 744" stroke="#57d5ff" stroke-width="5" stroke-linecap="round"/>
+      <text x="624" y="812" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#9fb2be">PRESSURE</text>
+    </g>
+  </g>
+
+  <!-- Bottom footer / status strip -->
+  <rect x="458" y="806" width="414" height="32" rx="16" fill="#131c24" stroke="#243443" stroke-width="2"/>
+  <text id="comm_status" x="486" y="828" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#55d66b">COMMUNICATION OK</text>
+  <circle id="comm_led" cx="842" cy="822" r="8" fill="#55d66b"/>
+</svg>
