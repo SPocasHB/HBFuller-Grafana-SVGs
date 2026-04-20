@@ -41,50 +41,50 @@
   <g id="card_level">
     <rect x="70" y="180" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="98" y="223" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Level</text>
-    <text id="txt_level" x="98" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f %</text>
+    <text id="LEVEL" x="98" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f %%</text>
   </g>
 
   <g id="card_mass">
     <rect x="70" y="324" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="98" y="367" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Mass</text>
-    <text id="txt_mass" x="98" y="419" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.2f kg</text>
+    <text id="MASS" x="98" y="419" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.2f kg</text>
   </g>
 
   <g id="card_volume">
     <rect x="70" y="468" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="98" y="511" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Volume</text>
-    <text id="txt_volume" x="98" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.7s L</text>
+    <text id="VOLUME" x="98" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f L</text>
   </g>
 
   <g id="card_density">
     <rect x="70" y="612" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="98" y="655" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Density</text>
-    <text id="txt_density" x="98" y="707" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#ffffff">%.s kg/m³</text>
+    <text id="DENSITY" x="98" y="707" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#ffffff">%.1f kg/m³</text>
   </g>
 
   <!-- RIGHT CARDS -->
   <g id="card_temp">
     <rect x="1190" y="180" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="1218" y="223" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Temperature</text>
-    <text id="txt_temp" x="1218" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.f °C</text>
+    <text id="TEMP" x="1218" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f °C</text>
   </g>
 
   <g id="card_pressure">
     <rect x="1190" y="324" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="1218" y="367" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Pressure</text>
-    <text id="txt_pressure" x="1218" y="419" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.6f mbar</text>
+    <text id="PRESSURE" x="1218" y="419" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f mbar</text>
   </g>
 
   <g id="card_maxvol">
     <rect x="1190" y="468" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="1218" y="511" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Max Volume</text>
-    <text id="txt_maxvol" x="1218" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.7f L</text>
+    <text id="MAXVOL" x="1218" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f L</text>
   </g>
 
   <g id="card_status">
     <rect x="1190" y="612" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="1218" y="655" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Status</text>
-    <text id="txt_status" x="1218" y="707" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#55d66b">TEST MODE</text>
+    <text id="STATUS" x="1218" y="707" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#55d66b">%s</text>
   </g>
 
   <!-- TANK -->
@@ -95,8 +95,12 @@
 
     <!-- Liquid objects -->
     <g id="liquid_group" clip-path="url(#tankClip)">
-      <rect id="tank_fill_rect" x="538" y="704" width="254" height="0" fill="url(#liquidGrad)"/>
-      <ellipse id="tank_fill_surface" cx="665" cy="704" rx="127" ry="18" fill="#79e0ff" opacity="0.88"/>
+      <!-- Bind this rectangle in SCADAvis using BAR or equivalent level animation -->
+      <rect id="LEVEL_BAR" x="538" y="704" width="254" height="0" fill="url(#liquidGrad)"/>
+
+      <!-- Bind this surface to move with level if desired -->
+      <ellipse id="LEVEL_SURFACE" cx="665" cy="704" rx="127" ry="18" fill="#79e0ff" opacity="0.88"/>
+
       <rect x="574" y="188" width="32" height="506" rx="16" fill="#ffffff" opacity="0.10"/>
     </g>
 
