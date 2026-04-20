@@ -53,20 +53,20 @@
   <g id="card_volume">
     <rect x="70" y="468" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="98" y="511" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Volume</text>
-    <text id="txt_volume" x="98" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.3f L</text>
+    <text id="txt_volume" x="98" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.7s L</text>
   </g>
 
   <g id="card_density">
     <rect x="70" y="612" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="98" y="655" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Density</text>
-    <text id="txt_density" x="98" y="707" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#ffffff">%.4f kg/m³</text>
+    <text id="txt_density" x="98" y="707" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#ffffff">%.s kg/m³</text>
   </g>
 
   <!-- RIGHT CARDS -->
   <g id="card_temp">
     <rect x="1190" y="180" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
     <text x="1218" y="223" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Temperature</text>
-    <text id="txt_temp" x="1218" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.5f °C</text>
+    <text id="txt_temp" x="1218" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.f °C</text>
   </g>
 
   <g id="card_pressure">
