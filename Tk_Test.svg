@@ -1,127 +1,534 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#10161d"/>
-      <stop offset="100%" stop-color="#0a0f14"/>
+<svg
+   width="1600"
+   height="900"
+   viewBox="0 0 1600 900"
+   version="1.1"
+   id="svg27"
+   sodipodi:docname="Tk_Test.svg"
+   inkscape:version="1.4.3-scada (5eeaa1c2f6, 2026-04-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview27"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.49166667"
+     inkscape:cx="705.76271"
+     inkscape:cy="505.42373"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg27" />
+  <defs
+     id="defs9">
+    <linearGradient
+       id="bgGrad"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#10161d"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#0a0f14"
+         id="stop2" />
     </linearGradient>
-
-    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6f7b84"/>
-      <stop offset="20%" stop-color="#dbe2e7"/>
-      <stop offset="50%" stop-color="#7c8a94"/>
-      <stop offset="80%" stop-color="#eef2f5"/>
-      <stop offset="100%" stop-color="#59656f"/>
+    <linearGradient
+       id="steelGrad"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#6f7b84"
+         id="stop3" />
+      <stop
+         offset="20%"
+         stop-color="#dbe2e7"
+         id="stop4" />
+      <stop
+         offset="50%"
+         stop-color="#7c8a94"
+         id="stop5" />
+      <stop
+         offset="80%"
+         stop-color="#eef2f5"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#59656f"
+         id="stop7" />
     </linearGradient>
-
-    <linearGradient id="liquidGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#57d5ff"/>
-      <stop offset="100%" stop-color="#008ecc"/>
+    <linearGradient
+       id="liquidGrad"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#57d5ff"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#008ecc"
+         id="stop9" />
     </linearGradient>
-
-    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+    <filter
+       id="softShadow"
+       x="-0.0046759424"
+       y="-0.0025167785"
+       width="1.0046759"
+       height="1.0050336">
+      <feDropShadow
+         dx="0"
+         dy="6"
+         stdDeviation="10"
+         flood-color="#000000"
+         flood-opacity="0.45" />
     </filter>
-
-    <clipPath id="tankClip">
-      <rect x="538" y="176" width="254" height="528" rx="110" ry="110"/>
+    <clipPath
+       id="tankClip">
+      <rect
+         x="538"
+         y="176"
+         width="254"
+         height="528"
+         rx="110"
+         ry="110"
+         id="rect9" />
     </clipPath>
   </defs>
-
   <!-- Background -->
-  <rect x="0" y="0" width="1600" height="900" fill="url(#bgGrad)"/>
-  <rect x="42" y="42" width="1516" height="816" rx="24" fill="none" stroke="#243443" stroke-width="2"/>
-
+  <rect
+     x="0"
+     y="0"
+     width="1600"
+     height="900"
+     fill="url(#bgGrad)"
+     id="rect10" />
+  <rect
+     x="42"
+     y="42"
+     width="1516"
+     height="816"
+     rx="24"
+     fill="none"
+     stroke="#243443"
+     stroke-width="2"
+     id="rect11" />
   <!-- Header -->
-  <text x="70" y="82" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#f2f6f8">TANK OVERVIEW</text>
-  <text x="72" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#8bd9ff">TK TULUOL</text>
-  <text x="1230" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="500" fill="#a9bac6">Live Values</text>
-
-  <!-- LEFT CARDS -->
-  <g id="card_level">
-    <rect x="70" y="180" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
-    <text x="98" y="223" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Level</text>
-    <text id="LEVEL" x="98" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f %%</text>
+  <text
+     x="70"
+     y="82"
+     font-family="Segoe UI, Arial, sans-serif"
+     font-size="42"
+     font-weight="700"
+     fill="#f2f6f8"
+     id="text11">TANK OVERVIEW</text>
+  <text
+     x="72"
+     y="128"
+     font-family="Segoe UI, Arial, sans-serif"
+     font-size="24"
+     font-weight="500"
+     fill="#8bd9ff"
+     id="text12"
+     inkscape:label="text12">TK TULUOL</text>
+  <text
+     x="1230"
+     y="78"
+     font-family="Segoe UI, Arial, sans-serif"
+     font-size="20"
+     font-weight="500"
+     fill="#a9bac6"
+     id="text13">Live Values</text>
+  <!-- LEFT COLUMN -->
+  <g
+     id="card_level">
+    <rect
+       x="70"
+       y="180"
+       width="330"
+       height="120"
+       rx="22"
+       fill="#131c24"
+       stroke="#243443"
+       stroke-width="2"
+       id="rect13" />
+    <text
+       x="98"
+       y="223"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="24"
+       font-weight="600"
+       fill="#9fb2be"
+       id="text14">Level</text>
+    <text
+       id="LEVEL"
+       x="98"
+       y="275"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="44"
+       font-weight="700"
+       fill="#ffffff">%f %%</text>
   </g>
-
-  <g id="card_mass">
-    <rect x="70" y="324" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
-    <text x="98" y="367" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Mass</text>
-    <text id="MASS" x="98" y="419" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.2f kg</text>
+  <g
+     id="card_mass">
+    <rect
+       x="70"
+       y="324"
+       width="330"
+       height="120"
+       rx="22"
+       fill="#131c24"
+       stroke="#243443"
+       stroke-width="2"
+       id="rect14" />
+    <text
+       x="98"
+       y="367"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="24"
+       font-weight="600"
+       fill="#9fb2be"
+       id="text15">Mass</text>
+    <text
+       id="MASS"
+       x="98"
+       y="419"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="44"
+       font-weight="700"
+       fill="#ffffff">%f kg</text>
   </g>
-
-  <g id="card_volume">
-    <rect x="70" y="468" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
-    <text x="98" y="511" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Volume</text>
-    <text id="VOLUME" x="98" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f L</text>
+  <g
+     id="card_volume">
+    <rect
+       x="70"
+       y="468"
+       width="330"
+       height="120"
+       rx="22"
+       fill="#131c24"
+       stroke="#243443"
+       stroke-width="2"
+       id="rect15" />
+    <text
+       x="98"
+       y="511"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="24"
+       font-weight="600"
+       fill="#9fb2be"
+       id="text16">Volume</text>
+    <text
+       id="VOLUME"
+       x="98"
+       y="563"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="44"
+       font-weight="700"
+       fill="#ffffff">%f L</text>
   </g>
-
-  <g id="card_density">
-    <rect x="70" y="612" width="330" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
-    <text x="98" y="655" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Density</text>
-    <text id="DENSITY" x="98" y="707" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#ffffff">%.1f kg/m³</text>
+  <g
+     id="card_density">
+    <rect
+       x="70"
+       y="612"
+       width="330"
+       height="120"
+       rx="22"
+       fill="#131c24"
+       stroke="#243443"
+       stroke-width="2"
+       id="rect16" />
+    <text
+       x="98"
+       y="655"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="24"
+       font-weight="600"
+       fill="#9fb2be"
+       id="text17">Density</text>
+    <text
+       id="DENSITY"
+       x="98"
+       y="707"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="40"
+       font-weight="700"
+       fill="#ffffff">%f kg/m³</text>
   </g>
-
-  <!-- RIGHT CARDS -->
-  <g id="card_temp">
-    <rect x="1190" y="180" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
-    <text x="1218" y="223" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Temperature</text>
-    <text id="TEMP" x="1218" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f °C</text>
+  <!-- RIGHT COLUMN -->
+  <g
+     id="card_temp">
+    <rect
+       x="1190"
+       y="180"
+       width="340"
+       height="120"
+       rx="22"
+       fill="#131c24"
+       stroke="#243443"
+       stroke-width="2"
+       id="rect17" />
+    <text
+       x="1218"
+       y="223"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="24"
+       font-weight="600"
+       fill="#9fb2be"
+       id="text18">Temperature</text>
+    <text
+       id="TEMP"
+       x="1218"
+       y="275"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="44"
+       font-weight="700"
+       fill="#ffffff">%f °C</text>
   </g>
-
-  <g id="card_pressure">
-    <rect x="1190" y="324" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
-    <text x="1218" y="367" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Pressure</text>
-    <text id="PRESSURE" x="1218" y="419" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f mbar</text>
+  <g
+     id="card_pressure">
+    <rect
+       x="1190"
+       y="324"
+       width="340"
+       height="120"
+       rx="22"
+       fill="#131c24"
+       stroke="#243443"
+       stroke-width="2"
+       id="rect18" />
+    <text
+       x="1218"
+       y="367"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="24"
+       font-weight="600"
+       fill="#9fb2be"
+       id="text19">Pressure</text>
+    <text
+       id="PRESSURE"
+       x="1218"
+       y="419"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="44"
+       font-weight="700"
+       fill="#ffffff">%f mbar</text>
   </g>
-
-  <g id="card_maxvol">
-    <rect x="1190" y="468" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
-    <text x="1218" y="511" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Max Volume</text>
-    <text id="MAXVOL" x="1218" y="563" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">%.1f L</text>
+  <g
+     id="card_maxvol">
+    <rect
+       x="1190"
+       y="468"
+       width="340"
+       height="120"
+       rx="22"
+       fill="#131c24"
+       stroke="#243443"
+       stroke-width="2"
+       id="rect19" />
+    <text
+       x="1218"
+       y="511"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="24"
+       font-weight="600"
+       fill="#9fb2be"
+       id="text20">Max Volume</text>
+    <text
+       id="MAXVOL"
+       x="1218"
+       y="563"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="44"
+       font-weight="700"
+       fill="#ffffff">%f L</text>
   </g>
-
-  <g id="card_status">
-    <rect x="1190" y="612" width="340" height="120" rx="22" fill="#131c24" stroke="#243443" stroke-width="2"/>
-    <text x="1218" y="655" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#9fb2be">Status</text>
-    <text id="STATUS" x="1218" y="707" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#55d66b">%s</text>
+  <g
+     id="card_status">
+    <rect
+       x="1190"
+       y="612"
+       width="340"
+       height="120"
+       rx="22"
+       fill="#131c24"
+       stroke="#243443"
+       stroke-width="2"
+       id="rect20" />
+    <text
+       x="1218"
+       y="655"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="24"
+       font-weight="600"
+       fill="#9fb2be"
+       id="text21">Status</text>
+    <text
+       id="STATUS"
+       x="1218"
+       y="707"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="40"
+       font-weight="700"
+       fill="#55d66b">TEST MODE</text>
   </g>
-
-  <!-- TANK -->
-  <g id="tank_group" filter="url(#softShadow)">
-    <!-- Shell -->
-    <rect x="520" y="150" width="290" height="580" rx="128" fill="url(#steelGrad)" stroke="#f2f6f8" stroke-width="3"/>
-    <rect x="538" y="176" width="254" height="528" rx="110" fill="#101922" stroke="#83929d" stroke-width="2"/>
-
-    <!-- Liquid objects -->
-    <g id="liquid_group" clip-path="url(#tankClip)">
-      <!-- Bind this rectangle in SCADAvis using BAR or equivalent level animation -->
-      <rect id="LEVEL_BAR" x="538" y="704" width="254" height="0" fill="url(#liquidGrad)"/>
-
-      <!-- Bind this surface to move with level if desired -->
-      <ellipse id="LEVEL_SURFACE" cx="665" cy="704" rx="127" ry="18" fill="#79e0ff" opacity="0.88"/>
-
-      <rect x="574" y="188" width="32" height="506" rx="16" fill="#ffffff" opacity="0.10"/>
+  <!-- TANK GROUP -->
+  <g
+     id="tank_group"
+     filter="url(#softShadow)">
+    <!-- Tank shell -->
+    <rect
+       x="520"
+       y="150"
+       width="290"
+       height="580"
+       rx="128"
+       fill="url(#steelGrad)"
+       stroke="#f2f6f8"
+       stroke-width="3"
+       id="rect21" />
+    <rect
+       x="538"
+       y="176"
+       width="254"
+       height="528"
+       rx="110"
+       fill="#101922"
+       stroke="#83929d"
+       stroke-width="2"
+       id="rect22" />
+    <!-- Liquid animation objects -->
+    <g
+       id="liquid_group"
+       clip-path="url(#tankClip)">
+      <rect
+         id="LEVEL_FILL"
+         x="538"
+         y="704"
+         width="254"
+         height="0"
+         fill="url(#liquidGrad)" />
+      <ellipse
+         id="LEVEL_SURFACE"
+         cx="665"
+         cy="704"
+         rx="127"
+         ry="18"
+         fill="#79e0ff"
+         opacity="0.88" />
+      <rect
+         x="574"
+         y="188"
+         width="32"
+         height="506"
+         rx="16"
+         fill="#ffffff"
+         opacity="0.10"
+         id="rect23" />
     </g>
-
-    <!-- Reflection -->
-    <path d="M 588 180 C 570 240, 570 330, 572 420 C 574 535, 580 620, 596 692"
-          fill="none" stroke="#ffffff" stroke-width="10" opacity="0.12"/>
-
+    <!-- Tank reflection -->
+    <path
+       d="M 588 180 C 570 240, 570 330, 572 420 C 574 535, 580 620, 596 692"
+       fill="none"
+       stroke="#ffffff"
+       stroke-width="10"
+       opacity="0.12"
+       id="path23" />
     <!-- Cooling ring -->
-    <ellipse cx="665" cy="162" rx="146" ry="28" fill="#3c4952" stroke="#aebdc6" stroke-width="3"/>
-    <ellipse cx="665" cy="162" rx="116" ry="16" fill="#182129" stroke="#90a0aa" stroke-width="2"/>
-
+    <ellipse
+       cx="665"
+       cy="162"
+       rx="146"
+       ry="28"
+       fill="#3c4952"
+       stroke="#aebdc6"
+       stroke-width="3"
+       id="ellipse23" />
+    <ellipse
+       cx="665"
+       cy="162"
+       rx="116"
+       ry="16"
+       fill="#182129"
+       stroke="#90a0aa"
+       stroke-width="2"
+       id="ellipse24" />
     <!-- Inlet -->
-    <path d="M 412 300 H 520" stroke="#9aa8b2" stroke-width="22" stroke-linecap="round" fill="none"/>
-    <circle cx="466" cy="300" r="26" fill="#d7dde2" stroke="#60707c" stroke-width="4"/>
-    <path d="M 450 284 L 482 316 M 482 284 L 450 316" stroke="#2a3640" stroke-width="5"/>
-    <text x="402" y="266" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#9fb2be">INLET</text>
-
+    <path
+       d="M 412 300 H 520"
+       stroke="#9aa8b2"
+       stroke-width="22"
+       stroke-linecap="round"
+       fill="none"
+       id="path24" />
+    <circle
+       cx="466"
+       cy="300"
+       r="26"
+       fill="#d7dde2"
+       stroke="#60707c"
+       stroke-width="4"
+       id="circle24" />
+    <path
+       d="M 450 284 L 482 316 M 482 284 L 450 316"
+       stroke="#2a3640"
+       stroke-width="5"
+       id="path25" />
+    <text
+       x="402"
+       y="266"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="20"
+       font-weight="600"
+       fill="#9fb2be"
+       id="text25">INLET</text>
     <!-- Outlet -->
-    <path d="M 810 580 H 944" stroke="#9aa8b2" stroke-width="22" stroke-linecap="round" fill="none"/>
-    <circle cx="876" cy="580" r="26" fill="#d7dde2" stroke="#60707c" stroke-width="4"/>
-    <path d="M 860 564 L 892 596 M 892 564 L 860 596" stroke="#2a3640" stroke-width="5"/>
-    <text x="914" y="546" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#9fb2be">OUTLET</text>
+    <path
+       d="M 810 580 H 944"
+       stroke="#9aa8b2"
+       stroke-width="22"
+       stroke-linecap="round"
+       fill="none"
+       id="path26" />
+    <circle
+       cx="876"
+       cy="580"
+       r="26"
+       fill="#d7dde2"
+       stroke="#60707c"
+       stroke-width="4"
+       id="circle26" />
+    <path
+       d="M 860 564 L 892 596 M 892 564 L 860 596"
+       stroke="#2a3640"
+       stroke-width="5"
+       id="path27" />
+    <text
+       x="914"
+       y="546"
+       font-family="Segoe UI, Arial, sans-serif"
+       font-size="20"
+       font-weight="600"
+       fill="#9fb2be"
+       id="text27">OUTLET</text>
   </g>
 </svg>
