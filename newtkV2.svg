@@ -21,15 +21,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.98333333"
-     inkscape:cx="658.98305"
-     inkscape:cy="450"
+     inkscape:zoom="0.69532167"
+     inkscape:cx="663.0025"
+     inkscape:cy="330.06306"
      inkscape:window-width="1920"
      inkscape:window-height="1129"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="liquid_group" />
+     inkscape:current-layer="svg27" />
   <defs
      id="defs9">
     <linearGradient
@@ -125,7 +125,8 @@
      width="1600"
      height="900"
      fill="url(#bgGrad)"
-     id="rect10" />
+     id="rect10"
+     style="display:inline" />
   <rect
      x="42"
      y="42"
@@ -135,36 +136,40 @@
      fill="none"
      stroke="#243443"
      stroke-width="2"
-     id="rect11" />
+     id="rect11"
+     style="display:inline" />
   <!-- Header -->
   <text
      x="70"
      y="82"
-     font-family="Segoe UI, Arial, sans-serif"
-     font-size="42"
+     font-family="'Segoe UI', Arial, sans-serif"
+     font-size="42px"
      font-weight="700"
      fill="#f2f6f8"
-     id="text11">TANK OVERVIEW</text>
+     id="text11"
+     style="display:inline">TANK OVERVIEW</text>
   <text
      x="72"
      y="128"
-     font-family="Segoe UI, Arial, sans-serif"
-     font-size="24"
+     font-family="'Segoe UI', Arial, sans-serif"
+     font-size="24px"
      font-weight="500"
      fill="#8bd9ff"
-     id="text12">TK TULUOL</text>
+     id="text12"
+     style="display:inline">TK TULUOL</text>
   <text
      x="1230"
      y="78"
-     font-family="Segoe UI, Arial, sans-serif"
-     font-size="20"
+     font-family="'Segoe UI', Arial, sans-serif"
+     font-size="20px"
      font-weight="500"
      fill="#a9bac6"
-     id="text13">Live Values</text>
+     id="text13"
+     style="display:inline">Live Values</text>
   <!-- LEFT COLUMN -->
   <g
      id="card_level"
-     style="display:none">
+     style="display:inline">
     <rect
        x="70"
        y="180"
@@ -203,7 +208,7 @@
   </g>
   <g
      id="card_mass"
-     style="display:none">
+     style="display:inline">
     <rect
        x="70"
        y="324"
@@ -242,7 +247,7 @@
   </g>
   <g
      id="card_volume"
-     style="display:none">
+     style="display:inline">
     <rect
        x="70"
        y="468"
@@ -281,7 +286,7 @@
   </g>
   <g
      id="card_density"
-     style="display:none">
+     style="display:inline">
     <rect
        x="70"
        y="612"
@@ -321,7 +326,7 @@
   <!-- RIGHT COLUMN -->
   <g
      id="card_temp"
-     style="display:none">
+     style="display:inline">
     <rect
        x="1190"
        y="180"
@@ -360,7 +365,7 @@
   </g>
   <g
      id="card_pressure"
-     style="display:none">
+     style="display:inline">
     <rect
        x="1190"
        y="324"
@@ -399,7 +404,7 @@
   </g>
   <g
      id="card_status"
-     style="display:none">
+     style="display:inline">
     <rect
        x="1190"
        y="612"
@@ -430,7 +435,7 @@
   <!-- Tank -->
   <g
      id="card_maxvol"
-     style="display:none">
+     style="display:inline">
     <rect
        x="1190"
        y="468"
@@ -470,7 +475,7 @@
   <g
      id="tank_group"
      filter="url(#softShadow)"
-     transform="translate(1.0169492)"
+     transform="translate(103.01695)"
      style="display:inline">
     <rect
        x="520"
