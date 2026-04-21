@@ -22,14 +22,14 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.69532167"
-     inkscape:cx="663.0025"
+     inkscape:cx="724.84437"
      inkscape:cy="330.06306"
      inkscape:window-width="1920"
      inkscape:window-height="1129"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg27" />
+     inkscape:current-layer="layer_temp" />
   <defs
      id="defs9">
     <linearGradient
@@ -203,7 +203,7 @@
            x="61.53083"
            y="255.80659"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.80683px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke-width:0.27783"
-           id="tspan_level">%5.1f %%</tspan></text>
+           id="tspan_level">%3.1f %</tspan></text>
     </g>
   </g>
   <g
@@ -320,7 +320,7 @@
            x="61.53083"
            y="255.80659"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.4092px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke-width:0.27783"
-           id="tspan_density">%6.1f kg/m³</tspan></text>
+           id="tspan_density">%4.1f kg/m³</tspan></text>
     </g>
   </g>
   <!-- RIGHT COLUMN -->
@@ -360,7 +360,7 @@
            x="61.53083"
            y="255.80659"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.4092px;line-height:1.25;font-family:'Segoe UI', Arial, sans-serif;-inkscape-font-specification:'Segoe UI, Arial, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke-width:0.27783"
-           id="tspan_temp">%5.1f °C</tspan></text>
+           id="tspan_temp">%3.1f °C</tspan></text>
     </g>
   </g>
   <g
@@ -399,7 +399,7 @@
            x="61.53083"
            y="255.80659"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.4092px;line-height:1.25;font-family:'Segoe UI', Arial, sans-serif;-inkscape-font-specification:'Segoe UI, Arial, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke-width:0.27783"
-           id="tspan_pressure">%6.1f mbar</tspan></text>
+           id="tspan_pressure">%3.1f mbar</tspan></text>
     </g>
   </g>
   <g
