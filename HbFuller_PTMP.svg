@@ -197,7 +197,7 @@
          x="61.53083"
          y="255.80659"
          id="txt_level_scada"
-         inkscape:label="{&quot;align&quot;:&quot;Right&quot;,&quot;attr&quot;:&quot;get&quot;,&quot;tag&quot;:&quot;TagLevel&quot;,&quot;type&quot;:&quot;Live&quot;}"
+         inkscape:label="{&quot;align&quot;:&quot;Right&quot;,&quot;attr&quot;:&quot;get&quot;,&quot;tag&quot;:&quot;@TagLevel&quot;,&quot;type&quot;:&quot;Good&quot;}"
          transform="scale(1.0050748,0.99495082)"><tspan
            sodipodi:role="line"
            x="61.53083"
@@ -236,7 +236,7 @@
          x="61.53083"
          y="255.80659"
          id="txt_mass_scada"
-         inkscape:label="{&quot;align&quot;:&quot;Right&quot;,&quot;attr&quot;:&quot;get&quot;,&quot;tag&quot;:&quot;TagMass&quot;,&quot;type&quot;:&quot;Good&quot;}"
+         inkscape:label="{&quot;align&quot;:&quot;Right&quot;,&quot;attr&quot;:&quot;get&quot;,&quot;tag&quot;:&quot;@TagMass&quot;,&quot;type&quot;:&quot;Live&quot;}"
          transform="scale(1.0050748,0.99495082)"><tspan
            sodipodi:role="line"
            x="61.53083"
